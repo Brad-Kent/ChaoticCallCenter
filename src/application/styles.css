@@ -1,0 +1,34 @@
+.hbox {
+    -fx-background-color: #333333;
+    -fx-background-radius: 5.0 ;
+    -fx-padding: 5;
+    -fx-spacing: 10;
+    -fx-border-style: inherit;
+
+    -fx-border-radius: 5;
+    -fx-border-insets: 0 0 0 0;
+    -fx-border-color: fuchsia;
+}
+.grid {
+    -fx-background-color: darkgray;
+    -fx-background-radius: 5.0;
+    -fx-background-insets: 0 0.0 0.0 0.0;
+
+}
+.hbox1 {
+    -fx-background-color: derive(black, 20%);
+
+}
+.text-area{
+    -fx-background-color: darkgray;
+}
+.text-area .content{
+    -fx-background-color: lightgray;
+}
+.hbox2{
+    -fx-background-color: green;
+    -fx-background-radius: 5.0 ;
+    -fx-padding: 5;
+    -fx-spacing: 10;
+    
+}

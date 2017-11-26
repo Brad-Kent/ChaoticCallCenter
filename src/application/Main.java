@@ -1,5 +1,7 @@
 package application;
 	
+import java.io.File;
+
 import javafx.application.Application;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
@@ -40,9 +42,12 @@ public class Main extends Application
          Customer.setUpCustomers();
          primaryStage.setTitle("Hello World");
          Scene scene = new Scene(root, 1160, 540);
-        // scene.getStylesheets().add("sample/style.css");
-       // scene.getStylesheets().add("style.css");
+         File file = new File("src/application/styles.css");
+         String path = file.getAbsolutePath();
+        scene.getStylesheets().add("file:///" + file.getAbsolutePath());
+        
         primaryStage.setScene(scene);
+        System.out.println("file:///" + file.getAbsolutePath().replace("\\", "/"));
 
         getCustomer();
         primaryStage.show();
